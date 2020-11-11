@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/branches"
+        android:id="@+id/branchesFragment"
+        android:icon="@drawable/ic_branches"
+        />
+    <item android:title="@string/categories"
+        android:id="@+id/categoriesFragment"
+        android:icon="@drawable/ic_categories"
+        />
+    <item android:title="@string/details"
+        android:id="@+id/detailsFragment"
+        android:icon="@drawable/ic_details"
+        />
+</menu>
