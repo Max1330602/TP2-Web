@@ -55,9 +55,9 @@ class CategoryRecyclerViewAdapter(var categories: List<Category> = listOf()) : R
                 Toast.makeText(it.context, category.name, Toast.LENGTH_SHORT).show()
 
 
-                val direction = CategoriesFragmentDirections.actionCategoriesFragmentToDetailCategoryFragmentWithCategory(category.href, category)
+                //val direction = CategoriesFragmentDirections.actionCategoriesFragmentToDetailCategoryFragmentWithCategory(category)
 
-                it.findNavController().navigate(direction)
+                //it.findNavController().navigate(direction)
             }
 
         }

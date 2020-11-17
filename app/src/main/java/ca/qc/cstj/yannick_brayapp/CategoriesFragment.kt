@@ -13,6 +13,7 @@ import ca.qc.cstj.yannick_brayapp.helpers.RepositoryResult
 import ca.qc.cstj.yannick_brayapp.models.Category
 import ca.qc.cstj.yannick_brayapp.repositories.CategoryRepository
 import ca.qc.cstj.yannick_brayapp.helpers.TopSpacingItemDecoration
+import kotlinx.android.synthetic.main.activity_categories.*
 import kotlinx.coroutines.launch
 import kotlin.random.Random
 
@@ -36,7 +37,7 @@ class CategoriesFragment : Fragment() {
         rcvCategories.apply {
             //layoutManager = GridLayoutManager(this.context,2)
             layoutManager = LinearLayoutManager(this.context)
-            adapter = planetRecyclerViewAdapter
+            adapter = categoryRecyclerViewAdapter
             addItemDecoration(topSpacingItemDecoration)
         }
 
@@ -53,10 +54,6 @@ class CategoriesFragment : Fragment() {
             }
         }
 
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
     }
 
     companion object {
